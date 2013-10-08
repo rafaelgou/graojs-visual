@@ -161,8 +161,6 @@ h2, h3, h4, h5, h6,
 }
 
 
-
-
 .panel-heading {
     h1, h2, h3, h4, h5, h6,
     .h1, .h2, .h3, .h4, .h5, .h6,  {
@@ -176,9 +174,18 @@ h2, h3, h4, h5, h6,
     font-size: 0.8em;
 }
 
+.nav {
+  > li {
+    > a {
+      color: @brand-primary;
+    }
+  }
+}
+
 .nav-pills, .nav-tabs {
   > li {
     > a {
+      color: @brand-primary;
       padding: @navpills_tab-link-padding;
     }
   }
