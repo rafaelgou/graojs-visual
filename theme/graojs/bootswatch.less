@@ -146,15 +146,22 @@ body {
 
 .navbar {
     font-family: @font-family-serif;
-    text-transform:  uppercase;
     font-size: @font-size-large;
-    opacity: 0.85;
+    opacity: 0.90;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,  {
     color: @grao-color;
 }
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6,  {
+    font-family: @font-family-base;
+}
+
+
+
 
 .panel-heading {
     h1, h2, h3, h4, h5, h6,
@@ -167,4 +174,12 @@ h1, h2, h3, h4, h5, h6,
     font-family: @font-family-serif;
     text-transform:  uppercase;
     font-size: 0.8em;
+}
+
+.nav-pills, .nav-tabs {
+  > li {
+    > a {
+      padding: @navpills_tab-link-padding;
+    }
+  }
 }
